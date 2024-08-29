@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zätti - Chättää</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="user-list-container">
+        <h2>Zätti - Se parempi chätti</h2>
+        <ul id="userList" class="user-list">
+          <!-- Users will be dynamically loaded here -->
+        </ul>
+      </aside>
+      <section class="chat-container">
+        <header id="chatHeader" class="chat-header">
+          <h2 id="profileName">Valitse Käyttäjä</h2>
+        </header>
+        <div id="aiResponses" class="ai-responses">
+          <!-- AI responses will be dynamically loaded here -->
+        </div>
+        <button id="refreshAiButton" class="refresh-ai-button">Refresh</button>
+        <div id="chatWindow" class="chat-window">
+          <!-- Messages will be dynamically loaded here -->
+        </div>
+        <div class="message-input">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Kirjoita viesti..."
+            disabled
+          />
+          <button id="sendMessageButton" disabled>Lähetä</button>
+        </div>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
